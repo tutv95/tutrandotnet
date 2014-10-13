@@ -1,6 +1,6 @@
 <div id="sticky-menu">
 <ul class="menuH decor1">
-    <li id="left-menu"><a class="arrow">Lập trình</a>
+    <li id="left-menu"><a href="http://tutran.net/programming" class="arrow">Lập trình</a>
         <ul>
 			<li><a href="http://tutran.net/programming/c">C</a></li>
 			<li><a href="http://tutran.net/programming/cpp">C++</a></li>

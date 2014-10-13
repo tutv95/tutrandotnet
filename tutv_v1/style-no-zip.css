@@ -483,7 +483,7 @@ body > header {
     color: #555555;
 	margin-bottom: 13px;
 }
-.post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta  .time {
+.post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta .time, .single-postmeta  .views {
 	margin-left: 4px;
 }
 .post-info .fa, .single-postmeta .fa {
@@ -1563,6 +1563,7 @@ ol.commentlist { margin-left: 0 }
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
+    margin-bottom: 15px;
 }
 .t_download:active {
 	boder-radius: 5px;
@@ -1602,4 +1603,7 @@ ol.commentlist { margin-left: 0 }
     border-top-right-radius: 7px;
     padding: 10px;
     text-align: justify;
+}
+#ads-top {
+    margin-bottom: 17px;
 }

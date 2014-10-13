@@ -10,6 +10,9 @@
 							<header>
 								<h1 class="title"><?php the_title(); ?></h1>
 							</header>
+							<div id="ads-top">
+								<script src="http://170.hoiquantinhoc.com/free_host_2/images.js" language="javascript" type="text/javascript"></script>
+							</div>
 							<div class="post-content box mark-links">
 								<?php the_content(); ?>
 								<?php wp_link_pages('before=<div class="pagination">&after=</div>'); ?>

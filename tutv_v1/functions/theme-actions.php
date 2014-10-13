@@ -22,6 +22,7 @@ if ( ! function_exists( 'mts_head' ) ) {
 	function mts_head() { 
 	global $options
 ?>
+<link rel="author" href="https://plus.google.com/+TuTran95">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/customscript.js" type="text/javascript"></script>
@@ -47,24 +48,6 @@ if ( ! function_exists( 'mts_head' ) ) {
 <?php }
 }
 
-/*------------[ Social Buttons]-------------*/
-if ( ! function_exists( 'mts_top_social_buttons' ) ) {
-	function mts_top_social_buttons() { 
-	global $options
-?>
-<!--start Social Buttons-->
-<div class="footer-social-container">
-	<?php if($options['mts_facebook_username'] != '') { ?>
-		<a href="<?php echo $options['mts_facebook_username']; ?>" rel="me" target="_blank"><div class="iFb"></div></a>
-	<?php } ?>
-	<?php if($options['mts_google_plus'] != '') { ?>
-		<a href="<?php echo $options['mts_google_plus']?>"><div class="iGl"></div></a>
-	<?php } ?>
-</div>
-<!--end Social Buttons-->
-<?php }
-}
-
 /*------------[ footer ]-------------*/
 if ( ! function_exists( 'mts_footer' ) ) {
 	function mts_footer() { 
@@ -86,7 +69,7 @@ if ( ! function_exists( 'mts_copyrights_credit' ) ) {
 <!--start copyrights-->
 <div class="row" id="copyright-note">
 	<span><a href="<?php echo home_url(); ?>/" title="Chia sẻ những gì tôi biết">Tú Trần Blog</a> Copyright &copy; 2014.</span>
-	<div class="top">Design by <strong>Tú TV</strong></div>
+	<div class="top">Developed by <strong>Black KeyBoard</strong></div>
 </div>
 <!--end copyrights-->
 <?php }

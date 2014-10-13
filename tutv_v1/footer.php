@@ -8,6 +8,9 @@
                	<div class="copyrights">
 					<?php mts_copyrights_credit(); ?>
 				</div>
+				<div id="ads-link">
+					<script src="http://170.hoiquantinhoc.com/free_host_2/textlinks.js" language="javascript" type="text/javascript"></script>
+				</div>
 			</div><!--.footer-widgets-->
 		</div><!--.container-->
 	</footer><!--footer-->
