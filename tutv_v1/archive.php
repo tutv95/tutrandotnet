@@ -37,7 +37,7 @@
 						<div class="no-results">
 							<p><strong><?php _e('There has been an error.', 'mythemeshop'); ?></strong></p>
 							<p><?php _e('We apologize for any inconvenience, please hit back on your browser or use the search form below.', 'mythemeshop'); ?></p>
-							<?php get_search_form(); ?>
+							<?php include("ggsearch.php"); ?>
 						</div><!--noResults-->
 					</div>
 				<?php endif; ?>
