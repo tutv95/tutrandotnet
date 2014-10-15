@@ -2,8 +2,7 @@
 <ul class="menuH decor1">
     <li id="left-menu"><a href="http://tutran.net/programming" class="arrow">Lập trình</a>
         <ul>
-			<li><a href="http://tutran.net/programming/c">C</a></li>
-			<li><a href="http://tutran.net/programming/cpp">C++</a></li>
+			<li><a href="http://tutran.net/programming/c-cpp">C/C++</a></li>
 			<li><a href="http://tutran.net/programming/web-development">Phát triển Web</a></li>
             <li><a class="arrow" href="#">Bộ sưu tập</a>
                 <ul>
