@@ -846,6 +846,25 @@ nav #searchform fieldset {
     border-radius: 50px;
     padding: 4px 6px;
 }
+
+.fb-like, .tuTV_like {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.tuTV_like_FB {
+    background: #eeeeee;
+}
+.tuTV_like_FB i {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 21px;
+}
+.tuTV_like_FB p {
+    margin-bottom: 0;
+    color: #176CED;
+    font-size: 15px;
+}
 /*-[ Read More ]-------------------*/
 .read-more {
     margin: 0 0 0 10px;
@@ -1061,7 +1080,7 @@ footer p { color: #8D8D8D }
 }
 .postauthor img {
     float: left;
-    margin: 5px 25px 15px 0;
+    margin: 5px 25px 9px 0;
 }
 .postauthor h4 a { color: #473636 }
 .clear { clear: both }
