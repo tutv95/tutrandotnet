@@ -16,12 +16,6 @@
 		wp_reset_query();
 	}
 
-	function tutv_filter_post($content) {
-		$_like_FB ='<div class="tuTV_like_FB"><p><i class="fa fa-thumbs-o-up"></i>Theo dõi <strong>Tu Tran dot Net</strong> trên Facebook để không bỏ lỡ những kiến thức bổ ích.</p><div class="fb-like" data-href="https://facebook.com/tutran.net" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div></div>';
-		return $content.$_like_FB;
-	}
-	add_filter('the_content', 'tutv_filter_post');
-
 	//Delete Revisions
 	$wpdb->query( "DELETE FROM $wpdb->posts WHERE post_type = 'revision'" );
 ?>

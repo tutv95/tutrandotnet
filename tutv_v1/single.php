@@ -26,7 +26,8 @@
 									<div class="bottomad">
 										<?php echo $options['mts_postend_adcode'];?>
 									</div>
-								<?php } ?> 
+								<?php } ?>
+								<div class="tuTV_like_FB"><p><i class="fa fa-thumbs-o-up"></i>Theo dõi <strong>Tu Tran dot Net</strong> trên Facebook để không bỏ lỡ những kiến thức bổ ích.</p><div class="fb-like" data-href="https://facebook.com/tutran.net" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div></div>
 								<div class="tags"><?php the_tags('<span class="tagtext">Từ khoá: </span>',', ') ?></div>
 								<?php v1_in($post->ID); ?>
 							</div>
