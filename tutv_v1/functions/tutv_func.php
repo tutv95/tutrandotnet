@@ -18,4 +18,15 @@
 
 	//Delete Revisions
 	$wpdb->query( "DELETE FROM $wpdb->posts WHERE post_type = 'revision'" );
+
+	function v1_views() {
+		$_views = get_post_meta(get_the_ID(), 'views', true);
+
+		if ($_views<1000) {
+			echo $_views;
+		}
+		else {
+			echo number_format($_views/1000, 1, '.', '').'K';
+		}
+	}
 ?>

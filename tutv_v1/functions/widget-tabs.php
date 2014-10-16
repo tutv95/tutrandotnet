@@ -25,7 +25,7 @@
  	<div class="info">
  	<p class="entry-title"><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
 	
-    <div class="meta"><span class="comments"><?php echo comments_number('<i class="fa fa-comments"></i>0','<i class="fa fa-comments"></i>1', '<i class="fa fa-comments"></i>%'); ?></span><span class="views"><i class="fa fa-eye"></i><?php the_views(); ?></span></div> <!--end .entry-meta--> 	
+    <div class="meta"><span class="comments"><?php echo comments_number('<i class="fa fa-comments"></i>0','<i class="fa fa-comments"></i>1', '<i class="fa fa-comments"></i>%'); ?></span><span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span></div> <!--end .entry-meta--> 	
 	
     </div> <!--end .info-->
 	<div class="clear"></div>
@@ -51,7 +51,7 @@ function mts_latest_tabs( $posts = 5 ) {
 </div>
  	<div class="info">
  	<p class="entry-title"><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
-    <div class="meta"><span class="comments"><?php echo comments_number('<i class="fa fa-comments"></i>0','<i class="fa fa-comments"></i>1', '<i class="fa fa-comments"></i>%'); ?></span><span class="views"><i class="fa fa-eye"></i><?php the_views(); ?></span></div> <!--end .entry-meta--> 	
+    <div class="meta"><span class="comments"><?php echo comments_number('<i class="fa fa-comments"></i>0','<i class="fa fa-comments"></i>1', '<i class="fa fa-comments"></i>%'); ?></span><span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span></div> <!--end .entry-meta--> 	
 	</div> <!--end .info-->
 	<div class="clear"></div>
 </li>

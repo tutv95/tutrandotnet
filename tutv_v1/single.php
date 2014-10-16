@@ -10,7 +10,7 @@
 							<header>
 								<h1 class="entry-title title single-title"><?php the_title(); ?></h1>
 								<div class="single-postmeta">
-									<span class="author"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span><span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span><span class="time date updated"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span><span class="views"><i class="fa fa-eye"></i><?php the_views(); ?></span>
+									<span class="author"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span><span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span><span class="time date updated"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span><span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span>
 								</div>
 							</header><!--.headline_area-->
 							<div id="ads-top">
