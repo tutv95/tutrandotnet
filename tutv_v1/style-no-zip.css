@@ -853,6 +853,7 @@ nav #searchform fieldset {
 }
 .tuTV_like_FB {
     background: #eeeeee;
+    border-left: 7px solid #007aff;
 }
 .tuTV_like_FB i {
     margin-top: 5px;
