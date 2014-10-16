@@ -1249,19 +1249,7 @@ ol.commentlist { margin-left: 0 }
     margin-bottom: 1em;
     line-height: 21px;
 }
-.fn {
-    font-size: 18px;
-    display: block;
-    line-height: 1.375em;
-    font-weight: bold;
-    font-family: PT Sans,sans-serif;
-}
-.fn a {
-    color: #51a2c1;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: PT Sans,sans-serif;
-}
+
 .comment-meta {
     font-size: 12px;
     font-style: italic;
