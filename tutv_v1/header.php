@@ -75,9 +75,9 @@
 					<h1>Seri: <?php single_term_title(); ?></h1>
 				<?php } ?>
 				<div class="social">
-					<a target="_blank" rel="nofollow" href="http://f.tutran.net" title="Tú Trần Blog trên Facebook"><i class="fa fa-facebook"></i></a>
-					<a target="_blank" rel="nofollow" href="http://g.tutran.net" title="Tú Trần Blog trên Google Plus"><i class="fa fa-google-plus"></i></a>
-					<a target="_blank" rel="nofollow" href="http://y.tutran.net" title="Tú Trần Blog trên Youtube"><i class="fa fa-youtube"></i></a>
+					<a target="_blank" rel="nofollow" href="http://tutran.net/go/fb" title="Tú Trần Blog trên Facebook"><i class="fa fa-facebook"></i></a>
+					<a target="_blank" rel="nofollow" href="http://tutran.net/go/gplus" title="Tú Trần Blog trên Google Plus"><i class="fa fa-google-plus"></i></a>
+					<a target="_blank" rel="nofollow" href="http://tutran.net/go/youtube" title="Tú Trần Blog trên Youtube"><i class="fa fa-youtube"></i></a>
 				</div>
 			</div>
 		</div>
