@@ -990,6 +990,10 @@ footer p { color: #8D8D8D }
     float: left;
 }
 .postauthor p { padding-top: 0px }
+
+.team-bk .postauthor img {
+    border-radius: 50%;
+}
 .related-posts ul {
     margin-left: 0;
     padding: 0;
@@ -1083,7 +1087,7 @@ footer p { color: #8D8D8D }
     float: left;
     margin: 5px 25px 9px 0;
 }
-.postauthor h4 a { color: #473636 }
+.postauthor h4 a { color: #51a2c1 }
 .clear { clear: both }
 .left {
     float: left;
