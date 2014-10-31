@@ -553,7 +553,7 @@ article header {
 }
 #tabber ul.tabs {
     overflow: hidden;
-    height: 38px;
+    height: 44px;
     text-align: center;
 }
 #tabber ul.tabs li {
@@ -578,7 +578,7 @@ article header {
     margin: 0;
     text-align: center;
     padding: 2px 0 2px 0;
-    line-height: 34px;
+    line-height: 44px;
     width: 100%;
     font-family: PT Sans, sans-serif;
 }
@@ -912,7 +912,10 @@ nav #searchform fieldset {
 .widget h3 {
     font-size: 20px;
     line-height: 18px;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 0;
+    padding: 13px;
+    color: #fff;
+    background: #51A2C1;
 }
 /*-[ Footer ]-------------------*/
 body > footer {
