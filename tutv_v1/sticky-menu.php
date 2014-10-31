@@ -19,18 +19,18 @@
 			<li><a href="http://tutran.net/photoshop/resources">Tài nguyên</a></li>
         </ul>
     </li>
-	
+
 	<li><a href="http://tutran.net/download" class="arrow">Tải về</a>
         <ul>
             <li><a href="http://tutran.net/download/software">Phần mềm</a></li>
 			<li><a href="http://tutran.net/download/game">Trò chơi</a></li>
         </ul>
     </li>
-	
+
 	<li><a href="http://tutran.net/tricks">Thủ thuật</a></li>
-	
+
 	<li><a href="http://tutran.net/uncategorized">Linh tinh</a></li>
-	
+
 	<li><a href="http://tutran.net/about">Giới thiệu</a></li>
 </ul>
 </div>

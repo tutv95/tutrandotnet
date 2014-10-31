@@ -7,6 +7,7 @@ Description: Great is a traditional WordPress magazine theme that combines a cle
 Version: 1.0
 
 */
+@import url("custom-style.css");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -399,7 +400,7 @@ body > header {
     background: #51a2c1;
     color: #fff !important;
     padding: 3px 5px;
-	font-size: 17px;
+    font-size: 17px;
     -webkit-transition: all 0.25s linear;
     -moz-transition: all 0.25s linear;
     transition: all 0.25s linear;
@@ -444,7 +445,7 @@ body > header {
 .featured-thumbnail img {
     margin-bottom: 0;
     width: 100%;
-	margin-right: 3.5%;
+    margin-right: 3.5%;
 }
 .title {
     margin-bottom: 5px;
@@ -456,7 +457,7 @@ body > header {
     line-height: 28px;
     float: left;
     padding: 0 0 0 0;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 #single-featured {
     width: 100%;
@@ -474,17 +475,17 @@ body > header {
     width: 620px;
 }
 .title a {
-	font-size: 21px;
+    font-size: 21px;
 }
 .page h1.title { margin-bottom: 20px }
 .post-info {
     display: block;
     font-size: 12px;
     color: #555555;
-	margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 .post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta .time, .single-postmeta  .views {
-	margin-left: 4px;
+    margin-left: 4px;
 }
 .post-info .fa, .single-postmeta .fa {
     font-size: 120%;
@@ -587,7 +588,7 @@ article header {
     margin: 0;
     color: #fff;
     text-decoration: none;
-    line-height: 34px;
+    line-height: 44px;
     text-align: center;
 }
 #tabber ul.tabs li.tab-recent-posts a {
@@ -598,12 +599,12 @@ article header {
 #tabber ul.tabs li.tab-recent-posts a.selected {
     background: #51a2c1;
     width: 100%;
-    line-height: 34px;
+    line-height: 44px;
     text-align: center;
 }
 #tabber ul.tabs li a:hover { text-decoration: none }
 #tabber .inside li {
-	background-color: #f5f5f5;
+    background-color: #f5f5f5;
     list-style: none;
     margin: 15px 0 0 0;
 }
@@ -613,13 +614,13 @@ article header {
     top: 0px !important;
     margin: 0px !important;
     padding: 0px !important;
-	width: 70%;
+    width: 70%;
 }
 p.entry-title, div.meta {
     padding-left: 5px;
 }
 #tabber .inside li div.info .entry-title {
-	height: 40px;
+    height: 40px;
     font-size: 13px;
     margin-bottom: 6px;
     overflow: hidden;
@@ -633,10 +634,10 @@ p.entry-title, div.meta {
     color: #565656;
 }
 #tabber .comments .fa, #tabber .views .fa {
-	margin-right: 3px;
+    margin-right: 3px;
 }
 #tabber .views {
-	margin-left: 10px;
+    margin-left: 10px;
 }
 #tabber .tab-thumb {
     border: 1px solid #f0f0f0;
@@ -823,13 +824,13 @@ nav #searchform fieldset {
     font-size: 21px;
 }
 .social .fa-youtube:hover {
-	background-color: #c70c0c;
+    background-color: #c70c0c;
 }
 .social .fa-facebook:hover {
-	background-color: #3b5998;
+    background-color: #3b5998;
 }
 .social .fa-google-plus:hover {
-	background-color: #d14333;
+    background-color: #d14333;
 }
 .social .fa-facebook {
     border: 1px solid #fff;
@@ -1060,11 +1061,11 @@ footer p { color: #8D8D8D }
 }
 .tags a:hover {
     background-color: #333;
-	color: #fff;
+    color: #fff;
 }
 .tagtext {
-	margin-right: 5px;
-	font-weight: bold;
+    margin-right: 5px;
+    font-weight: bold;
 }
 .postauthor {
     margin: 30px 0 0px 0;
@@ -1391,7 +1392,7 @@ ol.commentlist { margin-left: 0 }
 .nav-previous { float: left }
 .nav-next { float: right }
 .back-top {
-	font-size: 40px;
+    font-size: 40px;
 }
 
 .quan-tam ul {
@@ -1401,10 +1402,10 @@ ol.commentlist { margin-left: 0 }
     padding: 0 0 5px;
 }
 .quan-tam ul li a {
-	transition: padding-left 0.2s linear;
+    transition: padding-left 0.2s linear;
 }
 .quan-tam ul li a:hover {
-	padding-left: 5px;
+    padding-left: 5px;
 }
 /*-----------------------------------------------
 /* Responsive
@@ -1458,16 +1459,16 @@ ol.commentlist { margin-left: 0 }
         margin-right: 15px;
     }
     .breadcrumb { padding: 0 2% }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
 }
 @media screen and (max-width:760px) { 
     #header { margin: 0 }
     #featured-thumbnail { width: 45.1% }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
 }
 @media screen and (max-width:720px) { 
     .secondary-navigation a {
@@ -1488,20 +1489,20 @@ ol.commentlist { margin-left: 0 }
     .ad-125 li { max-width: 45% }
     .footer-widgets #s { width: 70% }
     #comments { margin-right: 0 }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
 }
 @media screen and (max-width:600px) { 
     .featured-thumbnail img { width: 100% }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
 }
 @media screen and (max-width:550px) { 
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
     .secondary-navigation {
         float: left;
         width: 100%;
@@ -1522,18 +1523,18 @@ ol.commentlist { margin-left: 0 }
         width: 100%;
         margin-bottom: 15px;
     }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
 }
 @media screen and (max-width:415px) { 
     #navigation {
         margin-top: 0;
         margin-bottom: 0;
     }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
     .secondary-navigation {
         width: 100%;
         height: 35px;
@@ -1546,18 +1547,18 @@ ol.commentlist { margin-left: 0 }
 @media screen and (max-width:400px) { 
     .slidertext { display: none }
     #commentform textarea { width: 90% }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
 }
 @media screen and (max-width:300px) { 
     nav fieldset, .js #navigation select {
         width: 100%;
         float: left;
     }
-	#sticky-menu {
-		display: none;
-	}
+    #sticky-menu {
+        display: none;
+    }
     .secondary-navigation {
         width: 90%;
         padding: 0 2%;
@@ -1581,23 +1582,23 @@ ol.commentlist { margin-left: 0 }
     margin-bottom: 15px;
 }
 .t_download:active {
-	boder-radius: 5px;
-	-moz-border-radius: 5px;
+    boder-radius: 5px;
+    -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
-	background:-moz-linear-gradient(top,transparent,rgba(0,0,0,.15));
-	background:-webkit-linear-gradient(top,transparent,rgba(0,0,0,.15));
-	background:-o-linear-gradient(top,transparent,rgba(0,0,0,.15));
-	background:-ms-linear-gradient(top,transparent,rgba(0,0,0,.15));
-	background:linear-gradient(to bottom,transparent,rgba(0,0,0,.15));
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
-	background-color:#72b352;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+    background:-moz-linear-gradient(top,transparent,rgba(0,0,0,.15));
+    background:-webkit-linear-gradient(top,transparent,rgba(0,0,0,.15));
+    background:-o-linear-gradient(top,transparent,rgba(0,0,0,.15));
+    background:-ms-linear-gradient(top,transparent,rgba(0,0,0,.15));
+    background:linear-gradient(to bottom,transparent,rgba(0,0,0,.15));
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+    background-color:#72b352;
 }
 .t_download:active {
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 .tu_bt {
     display: inline-block;
@@ -1613,7 +1614,7 @@ ol.commentlist { margin-left: 0 }
 }
 .tv_noti {
     background: none repeat scroll 0 0 #f4f4f4;
-	border-left: 10px solid rgb(0, 211, 126);
+    border-left: 10px solid rgb(0, 211, 126);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     padding: 10px;
