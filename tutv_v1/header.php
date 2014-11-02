@@ -42,7 +42,7 @@
 								<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
 							</h2><!-- END #logo -->
 					<?php } ?>
-				<?php } ?> 
+				<?php } ?>
 				<div class="secondary-navigation">
 					<nav id="navigation" >
 						<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
@@ -53,9 +53,9 @@
 							</ul>
 						<?php } ?>
 					</nav>
-				</div>     
-			</div>        
-		</div><!--#header-->  
+				</div>
+			</div>
+		</div><!--#header-->
 	</header>
 		<div class="breadcrumbs-wrap">
 			<div class="breadcrumbs">

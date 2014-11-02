@@ -17,7 +17,7 @@
 								<span class="author"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span><span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span><span class="time"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span>
 							</div>
 							<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="nofollow">
-							<?php if ( has_post_thumbnail() ) { ?> 
+							<?php if ( has_post_thumbnail() ) { ?>
 							<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail('featured',array('title' => '')); echo '</div>'; ?>
 							<?php } else { ?>
 							<div class="featured-thumbnail">
@@ -26,7 +26,7 @@
 							<?php } ?>
 							</a>
 						</header><!--.header-->
-						
+
 						<div class="post-content image-caption-format-1">
 							<?php echo excerpt(35);?>
 						</div>
@@ -48,7 +48,7 @@
 						<div class="nav-previous"><?php next_posts_link( __( '&larr; '.'Older posts', 'mythemeshop' ) ); ?></div>
 						<div class="nav-next"><?php previous_posts_link( __( 'Newer posts'.' &rarr;', 'mythemeshop' ) ); ?></div>
 					</div>
-				<?php } ?>			
+				<?php } ?>
 			</div>
 		</article>
 		<?php get_sidebar(); ?>

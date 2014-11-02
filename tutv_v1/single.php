@@ -31,7 +31,7 @@
 								<div class="tags"><?php the_tags('<span class="tagtext">Từ khoá: </span>',', ') ?></div>
 								<?php v1_in($post->ID); ?>
 							</div>
-						</div><!--.post-content box mark-links--> 
+						</div><!--.post-content box mark-links-->
 						<div class="postauthor">
 							<h4><?php _e('Giới thiệu về tác giả', 'mythemeshop'); ?></h4>
 							<?php if(function_exists('get_avatar')) { echo get_avatar( get_the_author_meta('email'), '100' );  } ?>
