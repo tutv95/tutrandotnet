@@ -3,9 +3,7 @@
 <div id="page">
 	<div class="content">
 		<article class="article">
-			<div id="ads-top">
-				<script src="http://170.hoiquantinhoc.com/free_host_2/images.js" language="javascript" type="text/javascript"></script>
-			</div>
+			<?php include("ads.php");
 			<div id="content_box">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<div class="post excerpt">

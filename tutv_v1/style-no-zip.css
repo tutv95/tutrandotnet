@@ -877,9 +877,12 @@ nav #searchform fieldset {
     font-size: 16px;
 }
 /*-[ Top Ad in Post ]-------------------------------------*/
-.topad {
-    margin-bottom: 10px;
-    clear: both;
+p.title-ad {
+background: #51A2C1;
+margin-bottom: 0px!important;
+padding: 7px;
+color: #fff;
+font-size: 16px;
 }
 /*-[ Bottom Ad in post ]-----------*/
 .bottomad {
@@ -1112,45 +1115,13 @@ footer p { color: #8D8D8D }
     -moz-transition: all 0.25s linear;
     transition: all 0.25s linear;
 }
-.tagcloud a:hover {
-    background: #222;
-    color: #fff;
-}
-/*-[ Ad Widgets ]------------------------------*/
-.ad-125 ul {
-    float: left;
-    width: 100%;
-    margin: 0;
-    list-style: none;
-    max-width: 100%;
-}
-.ad-125 li {
-    float: left;
-    border: none;
-    list-style: none!important;
-    padding-left: 0;
-    background: none;
-    margin-bottom: 0;
-}
-.ad-300 img { background: #FAFAFA }
-.ad-125 .evenad { float: right!important }
+
 footer .ad-300 img, footer .ad-125 img {
     padding: 0;
     background: #FAFAFA;
     border: 0;
 }
-/*-[ Calender Widget ]-------------------------*/
-#wp-calendar { width: 300px }
-#wp-calendar td { text-align: center }
-#wp-calendar caption {
-    font-size: 16px;
-    padding-bottom: 10px;
-    font-weight: bold;
-}
-#wp-calendar #prev {
-    text-align: left;
-    padding-left: 12px;
-}
+
 /*-[Comments]--------------*/
 .total-comments {
     font-size: 20px;
