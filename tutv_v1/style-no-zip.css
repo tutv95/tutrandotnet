@@ -876,14 +876,6 @@ nav #searchform fieldset {
     padding: 0;
     font-size: 16px;
 }
-/*-[ Top Ad in Post ]-------------------------------------*/
-p.title-ad {
-background: #51A2C1;
-margin-bottom: 0px!important;
-padding: 7px;
-color: #fff;
-font-size: 16px;
-}
 /*-[ Bottom Ad in post ]-----------*/
 .bottomad {
     float: left;
