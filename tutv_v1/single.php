@@ -38,6 +38,11 @@
 							<p><?php the_author_meta('description') ?></p>
 						</div>
 					</div><!--.g post-->
+					<div style="clear:left;"></div>
+					<div class="tip">
+							<h4>Mẹo nhỏ</h4>
+							<p>Mọi thắc mắc hay góp ý các bạn cứ bình luận nhiệt tình, nhờ đó giúp Blog cải thiện tốt hơn.</p>
+					</div>
 					<?php comments_template( '', true ); ?>
 				<?php endwhile; /* end loop */ ?>
 			</div>
