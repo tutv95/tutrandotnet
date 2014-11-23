@@ -5,7 +5,7 @@
 		$args = array('posts_per_page' => '5', 'cat' => $cat_ID, 'orderby' => 'rand', 'post__not_in' => array($id_));
 		$query = new WP_Query($args);
 		if ( $query->have_posts() ):
-		echo '<h3>Có thể bạn quan tâm</h3>';
+		echo '<h4 class="intersted">Có thể bạn quan tâm</h4>';
 		echo '<div class="quan-tam"><ul>';
 		while ( $query->have_posts() ):
 			$query->the_post();

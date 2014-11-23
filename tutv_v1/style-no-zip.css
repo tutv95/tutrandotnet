@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin-bottom: 12px;
     font-family: PT Sans, sans-serif;
-    color: #444;
+    color: #51A2C1;
 }
 h1 {
     font-size: 28px;
@@ -453,11 +453,15 @@ body > header {
     line-height: 22px;
 }
 .single-title {
-    font-size: 24px;
+    width: 100%;
+    font-size: 21px;
     line-height: 28px;
     float: left;
-    padding: 0 0 0 0;
+    padding: 5px 2px 5px 10px;
+    border-left: 5px solid #51A2C1;
     margin-bottom: 15px;
+    color: #51A2C1;
+    background: #eee;
 }
 #single-featured {
     width: 100%;
@@ -1073,6 +1077,7 @@ footer p { color: #8D8D8D }
 .postauthor h4 {
     font-weight: bold;
     font-size: 20px;
+    color: #434343;
 }
 .postauthor h5 {
     color: #51a2c1;
