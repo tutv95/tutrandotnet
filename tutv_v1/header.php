@@ -81,5 +81,5 @@
 				</div>
 			</div>
 		</div>
-		<?php include("sticky-menu.php"); ?>
+		<?php //include("sticky-menu.php"); ?>
 <div class="main-container">
