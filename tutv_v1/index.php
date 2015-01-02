@@ -26,7 +26,10 @@
 						</header><!--.header-->
 
 						<div class="post-content image-caption-format-1">
-							<?php echo excerpt(35);?>
+							<?php
+								if (get_post_meta($post->ID, '_yoast_wpseo_metadesc', true)) echo get_post_meta($post->ID, '_yoast_wpseo_metadesc', true);
+								else echo excerpt(35);
+							?>
 						</div>
 						<div class="readMore"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">Xem tiếp</a></div>
 					</div><!--.post excerpt-->

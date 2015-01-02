@@ -128,6 +128,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: PT Sans, sans-serif;
     color: #51A2C1;
 }
+.entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+color: #E55A12;
+}
 h1 {
     font-size: 28px;
     line-height: 44px;
