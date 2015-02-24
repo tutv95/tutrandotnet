@@ -144,15 +144,15 @@ h3 {
     line-height: 30px;
 }
 h4 {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 21px;
 }
 h5 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 34px;
 }
 h6 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
 }
 .sub-title { font-size: 12px }
@@ -736,9 +736,9 @@ tbody th {
 /*-[ Line ]---------------------*/
 hr {
     border: none;
-    border-bottom: 1px solid #E5E5E5;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    width: 297px;
+    border-bottom: 2px dashed #E5E5E5;
+    /* border-bottom: 1px solid rgba(0,0,0,0.1); */
+    /* width: 90%; */
     margin: 35px 0;
     clear: both;
     position: relative;

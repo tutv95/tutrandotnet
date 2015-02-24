@@ -15,7 +15,6 @@
 	<?php mts_head(); ?>
 	<?php wp_head(); ?>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="http://tutran.net/wp-content/themes/tutv_v1/down.css" rel="stylesheet">
 </head>
 <?php flush(); ?>
 <body id ="blog" <?php body_class('main'); ?>>

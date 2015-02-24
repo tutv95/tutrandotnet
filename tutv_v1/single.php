@@ -13,9 +13,7 @@
 									<span class="vcard author"><i class="fa fa-user"></i><span class="fn"><?php the_author_posts_link(); ?></span></span><span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span><span class="time date updated"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span><span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span>
 								</div>
 							</header><!--.headline_area-->
-							<div id="ads-top">
-								<script src="http://170.hoiquantinhoc.com/free_host_2/images.js" language="javascript" type="text/javascript"></script>
-							</div>
+							<?php include("ads.php"); ?>
 							<div class="post-single-content box mark-links entry-content">
 								<?php if (get_post_meta($post->ID, '_yoast_wpseo_metadesc', true)) { ?>
 									<h2 class="metadesc"><?php echo get_post_meta($post->ID, '_yoast_wpseo_metadesc', true); ?></h2>

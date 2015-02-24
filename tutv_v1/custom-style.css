@@ -84,6 +84,7 @@ color: #E70202;
 
 #ads-top {
     margin-bottom: 17px;
+    clear: left;
 }
 
 .information,.success,.error,.warning,.tip,.secure,.message,.download,.purchase,.print, .edit, .undconst, .register, .wait
