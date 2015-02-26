@@ -23,10 +23,8 @@ if ( ! function_exists( 'mts_head' ) ) {
 	global $options
 ?>
 <link rel="author" href="https://plus.google.com/+TuTran95">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/customscript.js" type="text/javascript"></script>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <style type="text/css">
 	<?php if($options['mts_bg_color'] != '') { ?>
 		body {background-color:<?php echo $options['mts_bg_color']; ?>;}
@@ -34,17 +32,9 @@ if ( ! function_exists( 'mts_head' ) ) {
 	<?php if ($options['mts_bg_pattern_upload'] != '') { ?>
 		body {background-image: url(<?php echo $options['mts_bg_pattern_upload']; ?>);}
 	<?php } ?>
-	<?php /*if ($options['mts_color_scheme'] != '') { ?>
-		.mts-subscribe input[type="submit"], .breadcrumbs, #tabber ul.tabs li a.selected, .footer-social-inner, .footer-social li a, #commentform input#submit, .tagcloud a, .readMore a, .currenttext, .pagination a:hover, #tabber ul.tabs li.tab-recent-posts a.selected {background-color:<?php echo $options['mts_color_scheme']; ?>; }
-		#header, #sidebars .widget, .tagcloud a, .related-posts, .postauthor, #commentsAdd, #tabber, .pagination, .single_post, .single_page, #comments, .ss-full-width {border-color:<?php echo $options['mts_color_scheme']; ?>; }
-		.single_post a, a:hover, #logo a, .textwidget a, #commentform a, #tabber .inside li a, .copyrights a:hover, .fn a, #tabber .inside li .meta, .rtitle, .postauthor h5, #navigation ul ul a:hover, .post-info a, footer .widget li a:hover , #tabber .inside li div.info .entry-title a:hover, .post-date, a {color:<?php echo $options['mts_color_scheme']; ?>; }
-		#navigation ul ul li:first-child { border-top-color: <?php echo $options['mts_color_scheme']; ?>; }
-	<?php } */?>
-	<?php //echo $options['mts_custom_css']; ?>
+	<?php echo $options['mts_custom_css']; ?>
 </style>
-<!--start custom CSS-->
 <?php echo $options['mts_header_code']; ?>
-<!--end custom CSS-->
 <?php }
 }
 
@@ -69,7 +59,7 @@ if ( ! function_exists( 'mts_copyrights_credit' ) ) {
 <!--start copyrights-->
 <div class="row" id="copyright-note">
 	<span><a href="<?php echo home_url(); ?>/" title="Chia sẻ những gì tôi biết">Tú Trần Blog</a> Copyright &copy; 2014.</span>
-	<div class="top">Developed by <strong>Black KeyBoard</strong></div>
+	<div class="top">Developed by <strong>Fries</strong> 2014-2015</div>
 </div>
 <!--end copyrights-->
 <?php }

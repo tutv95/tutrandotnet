@@ -8,7 +8,6 @@
 					<?php echo category_description(); ?>
 				</div>
 			<?php } ?>
-			<?php include("ads.php"); ?>
 			<div id="content_box">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<div class="post excerpt">

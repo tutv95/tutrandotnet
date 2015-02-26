@@ -14,7 +14,6 @@
 	<![endif]-->
 	<?php mts_head(); ?>
 	<?php wp_head(); ?>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <?php flush(); ?>
 <body id ="blog" <?php body_class('main'); ?>>
@@ -74,9 +73,9 @@
 					<h1>Seri: <?php single_term_title(); ?></h1>
 				<?php } ?>
 				<div class="social">
-					<a target="_blank" rel="nofollow" href="http://tutran.net/go/fb" title="Tú Trần Blog trên Facebook"><i class="fa fa-facebook"></i></a>
-					<a target="_blank" rel="nofollow" href="http://tutran.net/go/gplus" title="Tú Trần Blog trên Google Plus"><i class="fa fa-google-plus"></i></a>
-					<a target="_blank" rel="nofollow" href="http://tutran.net/go/youtube" title="Tú Trần Blog trên Youtube"><i class="fa fa-youtube"></i></a>
+					<a target="_blank" rel="nofollow" href="http://tutran.me/go/fb" title="Tú Trần Blog trên Facebook"><i class="fa fa-facebook"></i></a>
+					<a target="_blank" rel="nofollow" href="http://tutran.me/go/gplus" title="Tú Trần Blog trên Google Plus"><i class="fa fa-google-plus"></i></a>
+					<a target="_blank" rel="nofollow" href="http://tutran.me/go/youtube" title="Tú Trần Blog trên Youtube"><i class="fa fa-youtube"></i></a>
 				</div>
 			</div>
 		</div>

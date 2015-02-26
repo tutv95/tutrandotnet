@@ -8,16 +8,18 @@
                	<div class="copyrights">
 					<?php mts_copyrights_credit(); ?>
 				</div>
-				<div id="ads-link">
-					<script src="http://code.hoiquantinhoc.vn/free_host_2/textlinks.js" language="javascript" type="text/javascript"></script>
-				</div>
 			</div><!--.footer-widgets-->
 		</div><!--.container-->
 	</footer><!--footer-->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/back-top.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/sticky-menu.js"></script>
 
+<!-- Js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/customscript.js" type="text/javascript"></script>
 <?php mts_footer(); ?>
 <?php wp_footer(); ?>
+<script type="text/javascript">
+<?php if (is_single()) echo "countLikeFB(\"". get_permalink() ."\");";?>
+</script>
 </body>
 </html>

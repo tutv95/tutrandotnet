@@ -7,7 +7,6 @@ Description: Great is a traditional WordPress magazine theme that combines a cle
 Version: 1.0
 
 */
-@import url("custom-style.css");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -104,7 +103,6 @@ body {
     line-height: 1;
     font: 14px/19px arial, sans-serif;
     color: #555555;
-    background-color: #ffffff;
 }
 ::-moz-selection {
     background: #222;
@@ -126,9 +124,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin-bottom: 12px;
     font-family: PT Sans, sans-serif;
-    color: #51A2C1;
 }
-.entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+.entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
 color: #E55A12;
 }
 h1 {
@@ -172,7 +169,6 @@ a:link, a:visited, a:active { text-decoration: none }
     width: 960px;
     margin: 0 auto;
     max-width: 95%;
-    background: #fff;
     clear: both;
     padding: 0 2.15%;
     margin-bottom: 30px;
@@ -371,7 +367,6 @@ body > header {
     width: 100%;
 }
 .single_post {
-    background-color: #fff;
     float: left;
     width: 100%;
 }
@@ -427,7 +422,6 @@ body > header {
     margin-bottom: 35px;
     overflow: hidden;
     padding-bottom: 35px;
-    background-color: #fff;
     border-bottom: 1px solid #E9E9E9;
     position: relative;
 }
@@ -435,7 +429,6 @@ body > header {
     position: absolute;
     top: 10%;
     left: 5px;
-    background: #fff;
     color: #51a2c1;
     padding: 2px 6px;
 }
@@ -491,7 +484,7 @@ body > header {
     color: #555555;
     margin-bottom: 13px;
 }
-.post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta .time, .single-postmeta  .views {
+.post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta .time, .single-postmeta .views, .single-postmeta .likePost {
     margin-left: 4px;
 }
 .post-info .fa, .single-postmeta .fa {
@@ -546,6 +539,110 @@ article header {
     margin: 1.5em 0 1.571em 1.571em;
     list-style-type: decimal;
 }
+
+#back-to-top {
+    font-size: 49px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.cat-description p {
+padding: 10px;
+background: #FFFCC2;
+color: #E70202;
+}
+
+.t_download {
+    background-color: #FAFAFA;
+    border: 2px solid #51aded;
+    border-radius: 4px;
+    color: #51aded !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: consolas, Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+.t_download:hover {
+    background-color: #51aded;
+    color:#fff!important;
+}
+.t_download:active {
+    position:relative;
+    top:1px;
+}
+.tu_bt {
+    display: inline-block;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(#fff, #dedede);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #109f5f;
+    cursor: pointer;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.information, .copyright{
+    margin: 20px 0px;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    /* Un comment any BORDER CSS line to use the style; */
+    border: 3px dashed;
+}
+
+.copyright{
+    border-color: #4f8746;
+    color: #4f8746;
+    background: #d4ffcd url('images/copyright.png') no-repeat;
+    background-position: 30px 20px;
+}
+
+.copyright h4{
+    margin: 5px 5px 5px 80px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.copyright p{
+    font-size: 14px;
+    color: #434E54;
+    margin: 5px 5px 5px 80px;
+}
+/*Notification Boxes Properties*/
+.information{
+    border-color:#0e7fad;
+    color: #0e7fad;
+    background: #c0e9fa url('images/info.png') no-repeat;
+    background-position: 30px 20px;
+}
+
+.information h4{
+    margin: 5px 5px 5px 80px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.information p{
+    font-size: 14px;
+    color: #434E54;
+    margin: 5px 5px 5px 80px;
+}
+
+h4.interested {
+color: #394049!important;
+}
+
 /*-[ Tab widget ]------------------------------*/
 #tabber {
     display: block;
@@ -553,10 +650,8 @@ article header {
     margin: 0px 0px 25px 0px;
     overflow: hidden;
     max-width: 299px;
-    background-color: #FFF;
 }
 #tabber .inside {
-    background: #fff;
     border-top: none;
 }
 #tabber ul.tabs {
@@ -611,7 +706,6 @@ article header {
 }
 #tabber ul.tabs li a:hover { text-decoration: none }
 #tabber .inside li {
-    background-color: #f5f5f5;
     list-style: none;
     margin: 15px 0 0 0;
 }
@@ -770,7 +864,6 @@ nav #searchform fieldset {
 }
 .sidebar #s {
     width: 84.2%;
-    background-color: #fff;
     background-image: url(images/search.png);
     background-position: right center;
     background-repeat: no-repeat;
@@ -781,7 +874,6 @@ nav #searchform fieldset {
 .footer-widgets fieldset, #sidebars fieldset { width: 100% }
 .footer-widgets #s {
     width: 82%;
-    background-color: #fff;
     background-image: url(images/search.png);
     background-position: right center;
     background-repeat: no-repeat;
@@ -791,13 +883,10 @@ nav #searchform fieldset {
 }
 .footer-widgets .sbutton, #sidebars .sbutton {
     float: right;
-    background-color: #f9f7f2;
     text-align: center;
 }
 .sidebar .sbutton { padding-top: 10px }
 .breadcrumbs-wrap {
-    border-top: 1px solid #E9E9E9;
-    border-bottom: 1px solid #E9E9E9;
     padding: 15px 0;
     width: 100%;
     float: left;
@@ -899,7 +988,6 @@ nav #searchform fieldset {
     margin-bottom: 27px;
     overflow: hidden;
 }
-#sidebars .widget { background: white }
 .widget .title {
     font-weight: bold;
     text-transform: uppercase;
@@ -946,7 +1034,6 @@ footer .widget { margin-bottom: 0 }
 footer .widget li a { color: #555 }
 footer .widget li a:hover { color: #51a2c1 }
 footer {
-    background: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -971,10 +1058,8 @@ footer p { color: #8D8D8D }
     float: left;
     width: 100%;
     clear: both;
-    background-color: #FFF;
     padding-bottom: 5px;
     padding-top: 12px;
-    border-top: 1px solid #f4f4f4;
     color: #979494;
 }
 #copyright-note {
@@ -990,16 +1075,12 @@ footer p { color: #8D8D8D }
 .textwidget a:hover { color: #222!important }
 /*-[ Related Posts ]---------------------------*/
 .related-posts {
-    background-color: #FFF;
     margin-top: 30px;
     clear: both;
     float: left;
 }
 .postauthor p { padding-top: 0px }
 
-.team-bk .postauthor img {
-    border-radius: 50%;
-}
 .related-posts ul {
     margin-left: 0;
     padding: 0;
@@ -1072,7 +1153,6 @@ footer p { color: #8D8D8D }
 .postauthor {
     margin: 30px 0 0px 0;
     min-height: 125px;
-    background-color: #fff;
     float: left;
     clear: both;
     width: 100%;
@@ -1093,6 +1173,7 @@ footer p { color: #8D8D8D }
 .postauthor img {
     float: left;
     margin: 5px 25px 9px 0;
+    border-radius: 7px;
 }
 .postauthor h4 a { color: #51a2c1 }
 .clear { clear: both }
@@ -1321,7 +1402,7 @@ ol.commentlist { margin-left: 0 }
     width: 100%;
     font-family: arial;
     font-weight: 700;
-    background-color: #FFF;
+    background-color: #fafafa;
 }
 .pagination ul {
     list-style: none;
@@ -1430,16 +1511,10 @@ ol.commentlist { margin-left: 0 }
         margin-right: 15px;
     }
     .breadcrumb { padding: 0 2% }
-    #sticky-menu {
-        display: none;
-    }
 }
 @media screen and (max-width:760px) { 
     #header { margin: 0 }
     #featured-thumbnail { width: 45.1% }
-    #sticky-menu {
-        display: none;
-    }
 }
 @media screen and (max-width:720px) { 
     .secondary-navigation a {
@@ -1460,20 +1535,11 @@ ol.commentlist { margin-left: 0 }
     .ad-125 li { max-width: 45% }
     .footer-widgets #s { width: 70% }
     #comments { margin-right: 0 }
-    #sticky-menu {
-        display: none;
-    }
 }
 @media screen and (max-width:600px) { 
     .featured-thumbnail img { width: 100% }
-    #sticky-menu {
-        display: none;
-    }
 }
 @media screen and (max-width:550px) { 
-    #sticky-menu {
-        display: none;
-    }
     .secondary-navigation {
         float: left;
         width: 100%;
@@ -1494,17 +1560,11 @@ ol.commentlist { margin-left: 0 }
         width: 100%;
         margin-bottom: 15px;
     }
-    #sticky-menu {
-        display: none;
-    }
 }
 @media screen and (max-width:415px) { 
     #navigation {
         margin-top: 0;
         margin-bottom: 0;
-    }
-    #sticky-menu {
-        display: none;
     }
     .secondary-navigation {
         width: 100%;
@@ -1518,17 +1578,11 @@ ol.commentlist { margin-left: 0 }
 @media screen and (max-width:400px) { 
     .slidertext { display: none }
     #commentform textarea { width: 90% }
-    #sticky-menu {
-        display: none;
-    }
 }
 @media screen and (max-width:300px) { 
     nav fieldset, .js #navigation select {
         width: 100%;
         float: left;
-    }
-    #sticky-menu {
-        display: none;
     }
     .secondary-navigation {
         width: 90%;

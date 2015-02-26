@@ -10,10 +10,14 @@
 							<header>
 								<h1 class="entry-title title single-title"><?php the_title(); ?></h1>
 								<div class="single-postmeta">
-									<span class="vcard author"><i class="fa fa-user"></i><span class="fn"><?php the_author_posts_link(); ?></span></span><span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span><span class="time date updated"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span><span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span>
+									<span class="vcard author"><i class="fa fa-user"></i><span class="fn"><?php the_author_posts_link(); ?></span></span>
+									<span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span>
+									<span class="time date updated"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span>
+									<span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span>
+									<span class="likePost"><i class="fa fa-thumbs-o-up"></i><span id="countLike">0</span></span>
 								</div>
 							</header><!--.headline_area-->
-							<?php include("ads.php"); ?>
+
 							<div class="post-single-content box mark-links entry-content">
 								<?php if (get_post_meta($post->ID, '_yoast_wpseo_metadesc', true)) { ?>
 									<h2 class="metadesc"><?php echo get_post_meta($post->ID, '_yoast_wpseo_metadesc', true); ?></h2>
@@ -37,9 +41,8 @@
 						</div>
 					</div><!--.g post-->
 					<div style="clear:left;"></div>
-					<div class="tip">
-							<h4>Mẹo nhỏ</h4>
-							<p>Mọi thắc mắc hay góp ý các bạn cứ bình luận nhiệt tình, nhờ đó giúp Blog cải thiện tốt hơn.</p>
+					<div class="copyright">
+							<p>Bài viết được độc quyền bởi <a href="http://tutran.me">Tú Trần Blog</a>, các bạn copy nhớ ghi rõ nguồn <strong>Tú Trần Blog</strong> như một cách tôn trọng công sức của tác giả. Chúc các bạn có nhiều thứ hay ho từ Blog của mình :)</p>
 					</div>
 					<?php comments_template( '', true ); ?>
 				<?php endwhile; /* end loop */ ?>
