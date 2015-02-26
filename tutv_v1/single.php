@@ -13,6 +13,7 @@
 									<span class="vcard author"><i class="fa fa-user"></i><span class="fn"><?php the_author_posts_link(); ?></span></span>
 									<span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span>
 									<span class="time date updated"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span>
+									<span class="count-comments"><i class="fa fa-comments-o"></i><a href="#disqus_thread" title="Thảo luận về bài viết"><?php echo get_comments_number(); ?></a></span>
 									<span class="views"><i class="fa fa-eye"></i><?php v1_views(); ?></span>
 									<span class="likePost"><i class="fa fa-thumbs-o-up"></i><span id="countLike">0</span></span>
 								</div>

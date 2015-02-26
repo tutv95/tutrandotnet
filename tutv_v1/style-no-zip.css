@@ -484,7 +484,7 @@ body > header {
     color: #555555;
     margin-bottom: 13px;
 }
-.post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta .time, .single-postmeta .views, .single-postmeta .likePost {
+.post-info .category, .post-info .time, .single-postmeta .category , .single-postmeta .time, .single-postmeta .views, .single-postmeta .likePost, .single-postmeta .count-comments{
     margin-left: 4px;
 }
 .post-info .fa, .single-postmeta .fa {
