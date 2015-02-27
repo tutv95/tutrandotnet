@@ -568,6 +568,7 @@ color: #E70202;
     font-weight: bold;
     padding: 10px 15px;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 .t_download:hover {
     background-color: #51aded;
@@ -577,17 +578,19 @@ color: #E70202;
     position:relative;
     top:1px;
 }
+.textLink {
+    padding-right: 5px;
+}
 .tu_bt {
     display: inline-block;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(#fff, #dedede);
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    color: #109f5f;
-    cursor: pointer;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 1px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    font-family: consolas, PT Sans, sans-serif;
 }
 
 .information, .copyright{

@@ -3,11 +3,6 @@
 <div id="page">
 	<div class="content">
 		<article class="article">
-			<?php if (category_description()) { ?>
-				<div class="cat-description">
-					<?php echo category_description(); ?>
-				</div>
-			<?php } ?>
 			<div id="content_box">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<div class="post excerpt">
@@ -16,9 +11,11 @@
 								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
 							</h2>
 							<div class="post-info">
-								<span class="author"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span><span class="category"><i class="fa fa-bars"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span><span class="time"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span>
+								<span class="author"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span>
+								<span class="category"><i class="fa fa-archive"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span>
+								<span class="time"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span>
 							</div>
-							<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="nofollow" id="featured-thumbnail">
+							<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="nofollow">
 							<?php if ( has_post_thumbnail() ) { ?>
 							<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail('featured',array('title' => '')); echo '</div>'; ?>
 							<?php } else { ?>
@@ -30,7 +27,10 @@
 						</header><!--.header-->
 
 						<div class="post-content image-caption-format-1">
-							<?php echo excerpt(35);?>
+							<?php
+								if (get_post_meta($post->ID, '_yoast_wpseo_metadesc', true)) echo get_post_meta($post->ID, '_yoast_wpseo_metadesc', true);
+								else echo excerpt(35);
+							?>
 						</div>
 						<div class="readMore"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">Xem tiếp</a></div>
 					</div><!--.post excerpt-->
@@ -39,7 +39,7 @@
 						<div class="no-results">
 							<p><strong><?php _e('There has been an error.', 'mythemeshop'); ?></strong></p>
 							<p><?php _e('We apologize for any inconvenience, please hit back on your browser or use the search form below.', 'mythemeshop'); ?></p>
-							<?php include("ggsearch.php"); ?>
+							<?php get_search_form(); ?>
 						</div><!--noResults-->
 					</div>
 				<?php endif; ?>
