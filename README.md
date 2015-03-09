@@ -10,7 +10,7 @@ v2: Tập trung hướng đến người dùng
 * [WP-PostViews](https://wordpress.org/plugins/wp-postviews/)
 
 ## Plugin nên cài:
-* [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/)
+* [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/)
 * [Akismet](https://wordpress.org/plugins/akismet/)
 * [AddQuicktag](https://wordpress.org/plugins/addquicktag/)
 * [EG-Series](https://wordpress.org/plugins/eg-series/)
