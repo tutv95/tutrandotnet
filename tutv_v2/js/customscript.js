@@ -196,12 +196,29 @@ jQuery(document).ready(function() {
     })
 });
 
-//Update like Facebook
-function countLikeFB(link) {
-  var graph = "http://graph.facebook.com/?id=" + link;
-  $.getJSON(graph, function (data) {
-    if (data.shares) {
-      $('#countLike').text(data.shares);
+function countSocial(link) {
+  var fb = "http://project.tutran.me/CountSocial/backend/fb.php?url=" + link;
+  var gplus = "http://project.tutran.me/CountSocial/backend/gplus.php?url=" + link;
+
+  var count = 0;
+  jQuery.getJSON(fb, function (data) {
+    if (data.status == 'ok') {
+      count += data.count;
+      $('#countLike').text(count);
     }
   });
+
+  jQuery.getJSON(gplus, function (data) {
+    if (data.status == 'ok') {
+      count += data.count;
+      $('#countLike').text(count);
+    }
+  });
+}
+
+//Cat ngan title tren breadcrumb
+var x = $('.breadcrumb_last').text();
+if (x.length > 60) {
+  var y = x.substring(0, 54) + "...";
+  $('.breadcrumb_last').text(y);
 }

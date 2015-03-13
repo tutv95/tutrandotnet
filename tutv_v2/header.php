@@ -18,7 +18,7 @@
 <?php flush(); ?>
 <body id ="blog" <?php body_class('main'); ?>>
 	<header class="main-header">
-		<div id="header"">
+		<div id="header">
 			<div class="container">
 				<?php if ($options['mts_logo'] != '') { ?>
 					<?php if( is_front_page() || is_home() || is_404() ) { ?>

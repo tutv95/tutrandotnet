@@ -13,13 +13,12 @@
 	</footer><!--footer-->
 
 <!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/customscript.js" type="text/javascript"></script>
 <?php mts_footer(); ?>
 <?php wp_footer(); ?>
 <script type="text/javascript">
-<?php if (is_single()) echo "countLikeFB(\"". get_permalink() ."\");";?>
+<?php if (is_single()) echo "countSocial(\"". get_permalink() ."\");";?>
 </script>
 </body>
 </html>

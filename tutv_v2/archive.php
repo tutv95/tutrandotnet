@@ -18,7 +18,7 @@
 							<div class="post-info">
 								<span class="author"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span>
 								<span class="category"><i class="fa fa-archive"></i><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?></span>
-								<span class="time"><i class="fa fa-calendar"></i><time><?php the_time('j/m/Y'); ?></time></span>
+								<span class="time"><i class="fa fa-calendar"></i><?php the_time('j/m/Y'); ?></span>
 							</div>
 							<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="nofollow" id="featured-thumbnail">
 							<?php if ( has_post_thumbnail() ) { ?>
