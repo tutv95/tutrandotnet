@@ -1,5 +1,5 @@
 <?php $options = get_option('great'); ?>
-<?php get_header(); ?>//
+<?php get_header(); ?>
 <div id="page">
 	<div class="content">
 		<article class="article">
