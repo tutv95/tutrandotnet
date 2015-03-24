@@ -32,7 +32,6 @@
 								else echo excerpt(35);
 							?>
 						</div>
-						<div class="readMore"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">Xem tiếp</a></div>
 					</div><!--.post excerpt-->
 				<?php endwhile; else: ?>
 					<div class="post excerpt">
